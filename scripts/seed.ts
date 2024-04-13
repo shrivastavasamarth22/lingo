@@ -21,3 +21,5 @@ const main = async () => {
 		throw new Error("Failed to seed the database");
 	}
 };
+
+main();
