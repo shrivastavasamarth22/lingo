@@ -3,7 +3,7 @@ import { drizzle } from "drizzle-orm/neon-http";
 import { neon } from "@neondatabase/serverless";
 
 import * as schema from "../db/schema";
-
+1;
 const sql = neon(process.env.DATABASE_URL!);
 //@ts-ignore
 const db = drizzle(sql, { schema });
@@ -42,7 +42,6 @@ const main = async () => {
 				imageSrc: "/hr.svg",
 			},
 		]);
-
 		console.log("Seeding finished");
 	} catch (error) {
 		console.error(error);
